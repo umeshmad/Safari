@@ -173,7 +173,7 @@ function Home() {
                 setChooseAreaAnimate(false);
                 setCurrentSlide(0);
                 setTimeout(() => setChooseAreaAnimate(true), 50);
-            }, 6gi00);
+            }, 600);
             return () => clearTimeout(timer);
         }
     }, [curruntSlide, chooseAreaSlides.length]);
