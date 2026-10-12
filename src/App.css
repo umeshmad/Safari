@@ -1,0 +1,104 @@
+.green-wild-header {
+  min-width: 0;
+}
+
+.green-wild-logo-wrap {
+  min-width: 0;
+}
+
+.green-wild-logo {
+  max-width: none;
+}
+
+.green-wild-nav {
+  min-width: 0;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+}
+
+.green-wild-nav a,
+.green-wild-nav button {
+  white-space: nowrap;
+}
+
+.green-wild-book {
+  flex-shrink: 0;
+}
+
+.green-wild-hero-title,
+.green-wild-hero-subtitle {
+  word-break: break-word;
+}
+
+.green-wild-cta {
+  min-width: 0;
+}
+
+@media (max-width: 1100px) {
+  .green-wild-nav {
+    gap: 0.35rem;
+  }
+
+  .green-wild-nav a {
+    font-size: 0.7rem;
+  }
+
+  .green-wild-book {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .green-wild-logo {
+    height: 3.25rem;
+  }
+
+  .green-wild-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .green-wild-nav {
+    gap: 0.2rem;
+  }
+
+  .green-wild-nav a {
+    font-size: 0.62rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .green-wild-header {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .green-wild-logo {
+    height: 2.75rem;
+  }
+
+  .green-wild-hero-title {
+    font-size: clamp(2.2rem, 8vw, 4rem) !important;
+    line-height: 1.05;
+  }
+
+  .green-wild-hero-subtitle {
+    font-size: 0.95rem !important;
+    line-height: 1.5;
+  }
+
+  .green-wild-cta {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .green-wild-hero-title {
+    font-size: clamp(1.8rem, 10vw, 2.8rem) !important;
+  }
+
+  .green-wild-header {
+    height: 4rem;
+  }
+}
