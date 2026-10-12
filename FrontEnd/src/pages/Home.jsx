@@ -263,19 +263,19 @@ function Home() {
                 </div>
                 <div className="absolute inset-0 bg-gray-900/60 z-10"></div>
                 <div className="relative z-20 flex flex-col min-h-[calc(100vh)]">
-                    <nav className="bg-black h-16 md:h-20 flex justify-between items-center px-6 md:px-12 overflow-visible">
-                        <div className="flex items-center mr-30">
-                            <img src={logo} className="h-16 md:h-48 w-auto " />
+                    <nav className="green-wild-header bg-black h-16 md:h-20 flex justify-between items-center px-6 md:px-12 overflow-visible">
+                        <div className="green-wild-logo-wrap flex items-center mr-30">
+                            <img src={logo} className="green-wild-logo h-16 md:h-48 w-auto" />
                         </div>
                         {/* Desktop Navigation bar */}
-                        <div className="hidden md:flex gap-8 items-center justify-end">
+                        <div className="green-wild-nav hidden md:flex gap-8 items-center justify-end">
                             <a href="#home" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">Home</a>
                             <a href="#about" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">| About us</a>
                             <a href="#safari" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">| Safari Packages</a>
                             <a href="#gallery" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">| Gallery</a>
                             <a href="#review" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">| Review</a>
                             <a href="#contact" className="text-white hover:text-lime-400 transition duration-300 cursor-pointer text-sm font-medium">| Contact us</a>
-                            <button onClick={() => handleWhatsApp("Hello, I would like to book a safari/stay.")} className="bg-lime-400 text-black font-semibold border-0 rounded-lg h-10 px-6 hover:bg-lime-500 transition duration-300 text-sm">Book Now</button>
+                            <button onClick={() => handleWhatsApp("Hello, I would like to book a safari/stay.")} className="green-wild-book bg-lime-400 text-black font-semibold border-0 rounded-lg h-10 px-6 hover:bg-lime-500 transition duration-300 text-sm">Book Now</button>
                         </div>
                         {/* Mobile navigation bar */}
                         <button className="md:hidden text-white text-2xl border-0 bg-transparent cursor-pointer z-50" onClick={() => setMenuOpen(!menuOpen)}>
@@ -296,10 +296,10 @@ function Home() {
                     )}
 
                     <div className="flex flex-1 flex-col items-center justify-center text-center gap-5 px-4 sm:px-6 lg:px-8">
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[50px]">UNFORGETTABLE SAFARIS &</div>
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[50px]">PREMIUM STAYS.</div>
-                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">Witness the giants of Udawalawe by day and relax in our eco-luxury resort by night</div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-3xl">
+                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="green-wild-hero-title text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[50px]">UNFORGETTABLE SAFARIS &</div>
+                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '600' }} className="green-wild-hero-title text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[50px]">PREMIUM STAYS.</div>
+                        <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: '500' }} className="green-wild-hero-subtitle text-white/70 text-sm sm:text-base md:text-lg lg:text-xl max-w-3xl">Witness the giants of Udawalawe by day and relax in our eco-luxury resort by night</div>
+                        <div className="green-wild-cta grid grid-cols-1 sm:grid-cols-2 gap-3 w-full max-w-3xl">
                             <button onClick={() => document.getElementById('safari').scrollIntoView({ behavior: 'smooth' })} style={{ borderRadius: '8px' }} className="bg-lime-400 border-0 text-black font-thin px-6 py-3 md:px-7 md:py-4 text-sm md:text-base w-full">Book Safari</button>
                             <button onClick={() => document.getElementById('rooms').scrollIntoView({ behavior: 'smooth' })} style={{ borderRadius: '8px' }} className="bg-lime-400 border-0 text-black font-thin px-6 py-3 md:px-7 md:py-4 text-sm md:text-base w-full">View Rooms</button>
                         </div>
